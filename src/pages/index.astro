@@ -1,40 +1,228 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Simmeow Together">
 
-<section class="min-h-screen flex flex-col items-center justify-center text-center bg-slate-950 text-white">
+<Navbar />
 
-<h1 class="text-6xl font-black">
+<section
+id="hero"
+class="relative min-h-screen bg-cover bg-center flex items-center justify-center"
+style="background-image:url('/images/Banner.png');">
+
+<div class="absolute inset-0 bg-black/65"></div>
+
+<div class="relative z-10 text-center px-6">
+
+<img
+src="/images/Logo.jpg"
+alt="Simmeow Together"
+class="w-40 mx-auto mb-8 rounded-full shadow-2xl border-4 border-white"
+/>
+
+<h1 class="text-6xl md:text-8xl font-black text-white">
 SIMMEOW TOGETHER
 </h1>
 
-<p class="mt-6 text-xl text-slate-300">
-Gaming Content Creators
+<p class="mt-6 text-2xl text-gray-200">
+Gaming Adventures Begin Here
 </p>
 
-<p class="mt-2 text-slate-400">
+<p class="mt-2 text-lg text-gray-300">
 🇲🇲 Burmese Gaming Community
 </p>
 
-<div class="mt-10 flex gap-4">
+<div class="mt-10 flex justify-center gap-5 flex-wrap">
 
 <a
 href="https://youtube.com/@simmeowtogether"
-class="rounded-xl bg-red-600 px-6 py-3 font-bold hover:bg-red-700 transition">
+target="_blank"
+class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold transition">
 
-Watch YouTube
+▶ Watch YouTube
 
 </a>
 
 <a
 href="mailto:partnerships@simmeowtogether.com"
-class="rounded-xl border border-white px-6 py-3 hover:bg-white hover:text-black transition">
+class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-bold transition">
 
-Work With Us
+🤝 Work With Us
 
 </a>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="about"
+class="bg-slate-950 py-28">
+
+<div class="max-w-5xl mx-auto px-8">
+
+<h2 class="text-5xl font-black mb-8">
+About Simmeow Together
+</h2>
+
+<p class="text-xl leading-9 text-gray-300">
+Simmeow Together is a Burmese gaming content creator duo based in Thailand.
+
+We create entertaining gameplay videos, livestreams, horror games, co-op adventures, and fun content for the Burmese gaming community.
+</p>
+
+</div>
+
+</section>
+
+<section id="stats" class="bg-slate-900 py-24">
+
+<div class="max-w-6xl mx-auto px-8">
+
+<h2 class="text-5xl font-black text-center mb-16">
+Our Community
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-slate-800 rounded-2xl p-10 text-center shadow-xl">
+
+<div class="text-6xl font-black text-red-500">
+190K+
+</div>
+
+<p class="mt-4 text-gray-300">
+YouTube Subscribers
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-10 text-center shadow-xl">
+
+<div class="text-6xl font-black text-red-500">
+20M+
+</div>
+
+<p class="mt-4 text-gray-300">
+Total Video Views
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-10 text-center shadow-xl">
+
+<div class="text-6xl font-black text-red-500">
+🇲🇲
+</div>
+
+<p class="mt-4 text-gray-300">
+Burmese Gaming Community
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="bg-slate-950 py-28">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<h2 class="text-5xl font-black text-center mb-16">
+Latest Videos
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<a
+href="https://youtube.com/@simmeowtogether"
+target="_blank"
+class="group bg-slate-900 rounded-2xl overflow-hidden hover:scale-105 transition duration-300">
+
+<img
+src="/images/Banner.png"
+class="w-full h-56 object-cover group-hover:brightness-110"
+alt="Latest Video"
+/>
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+🎮 Horror & Co-op Adventures
+</h3>
+
+<p class="mt-3 text-gray-400">
+
+Watch our latest funny, horror and multiplayer gameplay videos.
+
+</p>
+
+</div>
+
+</a>
+
+<a
+href="https://youtube.com/@simmeowtogether"
+target="_blank"
+class="group bg-slate-900 rounded-2xl overflow-hidden hover:scale-105 transition duration-300">
+
+<img
+src="/images/Banner.png"
+class="w-full h-56 object-cover group-hover:brightness-110"
+alt="Latest Video"
+/>
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+👻 Scary Games
+</h3>
+
+<p class="mt-3 text-gray-400">
+
+Funny horror moments with Simba & Meow.
+
+</p>
+
+</div>
+
+</a>
+
+<a
+href="https://youtube.com/@simmeowtogether"
+target="_blank"
+class="group bg-slate-900 rounded-2xl overflow-hidden hover:scale-105 transition duration-300">
+
+<img
+src="/images/Banner.png"
+class="w-full h-56 object-cover group-hover:brightness-110"
+alt="Latest Video"
+/>
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold">
+🔥 Survival Games
+</h3>
+
+<p class="mt-3 text-gray-400">
+
+Competitive gameplay and hilarious moments.
+
+</p>
+
+</div>
+
+</a>
+
+</div>
 
 </div>
 
